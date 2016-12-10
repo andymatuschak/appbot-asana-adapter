@@ -3,6 +3,7 @@
 
 var Botkit = require('botkit');
 var asana = require('asana');
+var express = require('express');
 
 if (!process.env.token) {
   console.log('Error: Specify a Slack bot token in environment.');
@@ -102,3 +103,9 @@ function usage_tip() {
     console.log('Get a Slack token here: https://my.slack.com/apps/new/A0F7YS25R-bots')
     console.log('~~~~~~~~~~');
 }
+
+
+var dummyWebApp = express();
+dummyWebApp.listen(process.env['PORT'], (err) => {
+  if (err) throw err;
+});
