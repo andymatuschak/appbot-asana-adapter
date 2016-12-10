@@ -1,3 +1,6 @@
+// Hello this is a quick and dirty hack to route incoming review messages from Appbot to Asana tasks.
+// I am sorry to expose you to this quick and dirty code. But hey, at least you get to read it!
+
 var Botkit = require('botkit');
 var asana = require('asana');
 
