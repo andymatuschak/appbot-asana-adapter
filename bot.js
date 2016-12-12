@@ -106,6 +106,11 @@ function usage_tip() {
 
 
 var dummyWebApp = express();
+
+dummyWebApp.get('/', function (req, res) {
+  res.send('Greetings!')
+})
+
 dummyWebApp.listen(process.env['PORT'], (err) => {
   if (err) throw err;
 });
