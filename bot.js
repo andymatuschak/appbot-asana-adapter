@@ -33,7 +33,7 @@ controller.on('bot_message', function(bot,message) {
   var section = null;
   if (/iOS/.test(message.text)) {
     section = "228483622216933";
-  } else if (/Android/.test(message.text)) {
+  } else if (/Google Play/.test(message.text)) {
     section = "228483622216934";
   } else {
     console.error("Unknown platform");
