@@ -68,7 +68,7 @@ controller.on('bot_message', function(bot,message) {
     if (starTag === 0) {
       console.error("Invalid message: no stars!");
       console.error(message);
-      return;
+      continue;
     }
     console.log(JSON.stringify(message));
 
